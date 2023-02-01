@@ -17,17 +17,20 @@ values('agua mineral angel',10,1.5);
 ----------------------------
 -- modificar nombre tabla
 ----------------------------
+alter table 'nombre_tabla_antigua' rename to 'nombre_tabla_actual'
 alter table dbo.product rename to producto;
 
 ----------------------------
 -- adicionar columna
 ----------------------------
+alter table 'nombre_tabla' add column 'nombre_nuevo_campo' typeData;
 alter table dbo.producto
 add column estado varchar(1) default '1';
 
 ----------------------------
 -- aumentar tamaño columna
 ----------------------------
+alter table 'nombre_tabla' alter column 'nombre_campo' typeData;
 alter table dbo.producto
 alter column denominacion type varchar(60);
 
