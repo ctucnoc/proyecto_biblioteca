@@ -58,6 +58,7 @@ INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Octavio Irineo', '
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Gabriel José de la Concordia', 'García Márquez', '1');
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('César Abraham', 'Vallejo Mendoza', '1');
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Mario Gerardo', 'Piattini Velthuis', '1');
+INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Mercedes', 'Marqués', '1');
 
 --------------------------------------------------------------------------------------------------------------------------------
 ---DATOS DE LA TABLA: AUTOR
@@ -72,3 +73,5 @@ INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, an
 VALUES ('976-84-7897-5', 'el tungsteno', 'el tungsteno', 'el tungsteno', '230', '1931', 4, 9, '1');
 INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('976-84-7897-3', 'cien años de soledad', 'cien años de soledad', 'cien años de soledad', '280', '1981', 3, 9, '1');
+INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+VALUES ('978-84-693-0146-3', 'bases de datos', 'bases de datos', 'bases de datos', '342', '1981', 3, 2, '1');

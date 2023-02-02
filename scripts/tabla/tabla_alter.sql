@@ -3,7 +3,7 @@
 ----------------------------
 create table dbo.product(
 id serial primary key,
-denominacion varchar(20) not null,
+denominacion varchar(10) not null,
 cant integer not null,
 precio double precision not null
 );
