@@ -1,7 +1,6 @@
 --------------------------------------------------------------------------------------------------------------------------------
 ---DATOS DE LA TABLA: AREA
 --------------------------------------------------------------------------------------------------------------------------------
-
 INSERT INTO dbo.adm_area(descripcion, estado) VALUES ('informatica', '1');
 INSERT INTO dbo.adm_area(descripcion, estado) VALUES ('literatura', '1');
 
@@ -33,6 +32,7 @@ INSERT INTO dbo.adm_editorial(nombre, estado) VALUES ('Editorial Mirahadas', '1'
 INSERT INTO dbo.adm_editorial(nombre, estado) VALUES ('Editorial Sexto Piso', '1');
 INSERT INTO dbo.adm_editorial(nombre, estado) VALUES ('Editorial Alfaomega', '1');
 INSERT INTO dbo.adm_editorial(nombre, estado) VALUES ('Editorial Ra-Ma', '1');
+INSERT INTO dbo.adm_editorial(nombre, estado) VALUES ('MC GRAW HILL', '1');
 
 --------------------------------------------------------------------------------------------------------------------------------
 ---DATOS DE LA TABLA: ZONA
@@ -59,6 +59,9 @@ INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Gabriel José de l
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('César Abraham', 'Vallejo Mendoza', '1');
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Mario Gerardo', 'Piattini Velthuis', '1');
 INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Mercedes', 'Marqués', '1');
+INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Cesar', ' Seoane Ruano', '1');
+INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Roxana', 'Silvia Giandini', '1');
+INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Gabriela', 'Pérez', '1');
 
 --------------------------------------------------------------------------------------------------------------------------------
 ---DATOS DE LA TABLA: AUTOR
@@ -75,3 +78,22 @@ INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, an
 VALUES ('976-84-7897-3', 'cien años de soledad', 'cien años de soledad', 'cien años de soledad', '280', '1981', 3, 9, '1');
 INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('978-84-693-0146-3', 'bases de datos', 'bases de datos', 'bases de datos', '342', '1981', 3, 2, '1');
+INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+VALUES ('978-84-481-7137-7', 'SEGURIDAD INFORMATICA.GRADO MEDIO', 'Seguridad informatica', 'Seguridad informatica', '240', '2010', 5, 3, '1');
+INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+VALUES ('978-84-481-7137-8', 'Desarrollo de software dirigido por modelos: Conceptos teóricos y su aplicación práctica', 'desarollo de software', 'desarollo de software', '170', '2010', 5, 1, '1');
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+---DATOS DE LA TABLA: LIBRO AUTOR
+--------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (1, 4, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (2, 4, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (3, 3, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (4, 3, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (5, 2, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (6, 5, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (7, 6, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (7, 4, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (8, 7, '1');
+INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (8, 8, '1');
