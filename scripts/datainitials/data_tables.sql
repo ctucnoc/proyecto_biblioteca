@@ -97,3 +97,57 @@ INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (7, 6, '1');
 INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (7, 4, '1');
 INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (8, 7, '1');
 INSERT INTO dbo.adm_libro_autor(id_libro, id_autor, estado) VALUES (8, 8, '1');
+
+--------------------------------------------------------------------------------------------------------------------------------
+---DATOS DE LA TABLA: EJEMPLAR
+--------------------------------------------------------------------------------------------------------------------------------
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00342', 5, '2023-02-03', 1, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00343', 2, '2023-02-03', 1, 1,2 , '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00344', 3, '2023-02-03', 1, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00345', 4, '2023-02-03', 2, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00346', 5, '2023-02-03', 2, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00347', 2, '2023-02-03', 2, 1, 4, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00348', 1, '2023-02-03', 3, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00349', 2, '2023-02-03', 3, 1, 2, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00350', 1, '2023-02-03', 3, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00351', 3, '2023-02-03', 4, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00352', 5, '2023-02-03', 4, 1, 2, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00353', 4, '2023-02-03', 4, 1, 4, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00354', 6, '2023-02-03', 5, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00355', 5, '2023-02-03', 5, 1, 2, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('LIT-00356', 7, '2023-02-03', 5, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00354', 6, '2023-02-03', 6, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00355', 3, '2023-02-03', 6, 1, 2, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00356', 4, '2023-02-03', 6, 1, 4, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00357', 3, '2023-02-03', 7, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00358', 3, '2023-02-03', 7, 1, 4, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00359', 7, '2023-02-03', 7, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00360', 3, '2023-02-03', 8, 1, 1, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00361', 3, '2023-02-03', 8, 1, 4, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00362', 5, '2023-02-03', 8, 1, 3, '1');
+INSERT INTO dbo.adm_ejemplar(codigo, cantidad, fecha_registro, id_libro, id_ejemplar_estado, id_zona, estado)
+VALUES ('INF-00363', 4, '2023-02-03', 8, 1, 2, '1');
