@@ -6,10 +6,10 @@
 -- :: (*) 			.- Recuperar todo los campos de un ficheros o tabla
 -- :: FROM 			.- Ficheros o tablas de donde se recuperaran los datos.
 -- :: SELECT * FROM 'NOMBRE_TABLA'
--- :: AS (ALIAS)	.- Son titulos alternativos para los nombres de la columna.
+-- :: ALIAS (AS)	.- Son titulos alternativos para los nombres de la columna.
 -- :: COLUMNA COMPUTADA .- Son el resultado de ejecutar algunas operaciones con las columnas de una tabla.
 
----------------------------------------------- ****EJEMPLOS PRACTIVOS****---------------------------------------
+---------------------------------------------- ****EJEMPLOS PRACTICOS****---------------------------------------
 -- 1) RETORNAR TODOS LOS DATOS DE LA TABLA ADM_LIBRO DE LA BASES DE DATOS DB_BIBLIOTECA.
 select * from dbo.adm_libro;
 
