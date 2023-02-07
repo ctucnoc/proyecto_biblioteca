@@ -40,7 +40,7 @@ estado varchar(1) default '1'
 
 create table dbo.adm_libro(
 id_libro serial not null,
-idbn varchar(30),
+isbn varchar(30),
 titulo varchar(200) not null,
 sub_titulo varchar(500),
 descripcion varchar(1000),

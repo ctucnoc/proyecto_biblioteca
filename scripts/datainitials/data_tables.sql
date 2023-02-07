@@ -66,21 +66,21 @@ INSERT INTO dbo.adm_autor(nombre, apellidos, estado) VALUES ('Gabriela', 'Pérez
 --------------------------------------------------------------------------------------------------------------------------------
 ---DATOS DE LA TABLA: AUTOR
 --------------------------------------------------------------------------------------------------------------------------------
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('0-7645-2641-3', 'diseño de bases de datos relacional', 'diseño de bases de datos relacional', 'bases de datos', '342', '2015', 4, 2, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('976-84-7897-6', 'auditoria de tecnologia y sistemas de informacion', 'auditoria informatica', 'auditoria de tecnologia', '438', '2015', 4, 4, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('976-84-7897-7', 'paco yunque', 'paco yunque', 'paco yunque', '10', '2010', 4, 8, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('976-84-7897-5', 'el tungsteno', 'el tungsteno', 'el tungsteno', '230', '1931', 4, 9, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('976-84-7897-3', 'cien años de soledad', 'cien años de soledad', 'cien años de soledad', '280', '1981', 3, 9, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('978-84-693-0146-3', 'bases de datos', 'bases de datos', 'bases de datos', '342', '1981', 3, 2, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('978-84-481-7137-7', 'SEGURIDAD INFORMATICA.GRADO MEDIO', 'Seguridad informatica', 'Seguridad informatica', '240', '2010', 5, 3, '1');
-INSERT INTO dbo.adm_libro(idbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
+INSERT INTO dbo.adm_libro(isbn, titulo, sub_titulo, descripcion, nro_paginas, anio_publicacion, id_editorial, id_sub_area, estado)
 VALUES ('978-84-481-7137-8', 'Desarrollo de software dirigido por modelos: Conceptos teóricos y su aplicación práctica', 'desarollo de software', 'desarollo de software', '170', '2010', 5, 1, '1');
 
 
