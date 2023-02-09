@@ -50,3 +50,13 @@ select * from dbo.adm_libro order by titulo asc;
 
 -- 5) RETORNAR LOS REGISTROS DE LA TABLA ADM_LIBRO CUYO AÑO DE PUBLICACIÓN SEA IGUAL A 2010 Y ORDENARLOS DE FORMA ASCENDENTE MEDIANTE EL CAMPO TITULO Y SUB_TITULO;
 select * from dbo.adm_libro where anio_publicacion = '2010' order by 3,4 asc;
+
+-- 7) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO QUE NO ESTEN COMPRENDIDO ENTRE LOS AÑOS DE PUBLICACION 2010 Y 2015
+select * from dbo.adm_libro where anio_publicacion not between '2010' and '2015';
+
+-- 8) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO QUE PERTENECEN A LA EDITORIAL 4 0 5
+select * from dbo.adm_editorial;
+select * from dbo.adm_libro where id_editorial in(4,5);
+
+-- 9) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO CUYOS REGISTROS NO PERTENESCAN A LA EDITORIAL 3
+select * from dbo.adm_libro where not id_editorial in(3)
