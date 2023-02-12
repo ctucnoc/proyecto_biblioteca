@@ -24,16 +24,31 @@
 -- ======================================= OPERADORES DE CARACTERES FIN: =========================================
 
 -- ========================================= OPERADORES DE COMPARACIÓN: ==========================================
---- A) <        .- MENOR QUE
---- B) >        .- MAYOR QUE
---- C) >        .- DISTINTO DE
---- D) <=       .- MENOR O IGUAL QUE
---- E) >=       .- MAYOR O IGUAL QUE
---- F) =        .- IGUAL QUE
---- G) BETWEEN  .- UTILIZAR PARA ESPECIFICAR UN INTERVALO DE VALORES
---- H) LIKE     .- UTILIZADO EN LA COMPRACIÓN DE UN MODELO
---- I) IN       .- ESPECIFICADO PARA ESPECIFICAR UN REGISTRO DE UNA BASE DE DATOS
+--- A) <            .- MENOR QUE
+--- B) >            .- MAYOR QUE
+--- C) >            .- DISTINTO DE
+--- D) <=           .- MENOR O IGUAL QUE
+--- E) >=           .- MAYOR O IGUAL QUE
+--- F) =            .- IGUAL QUE
+--- G) BETWEEN      .- UTILIZAR PARA ESPECIFICAR UN INTERVALO DE VALORES
+--- H) LIKE(~~)     - UTILIZADO EN LA COMPRACIÓN DE UN MODELO
+--- I) IN           .- ESPECIFICADO PARA ESPECIFICAR UN REGISTRO DE UNA BASE DE DATOS
+--- J) similar to   .- 
 -- ======================================= OPERADORES DE COMPARACIÓN FIN: =========================================
+
+-- ================================================ SINTAXIS SQL: =================================================
+-- CAMPO [NOT] BETWEEN VALOR1 AND VALOR2  --> LA CONDICIÓN NOT NO ES OBLIGATORIA
+-- CAMPO [NOT] IN (VALOR1, VALOR2,...)    --> LA CONDICIÓN NOT NO ES OBLIGATORIA
+-- (EXPRESIÓN Ó CAMPO) [NOT] LIKE MODELO                --> LA CONDICIÓN NOT NO ES OBLIGATORIA
+
+-- ============================================== SINTAXIS SQL FIN: ================================================
+
+-- LIKE .- SE UTILIZA PARA COMPARAR UNA EXPRESIÓN DE CADENA CON UN MODELO EN UNA EXPRESIÓN SQL.
+
+-- ===================================================== COMODIN ===================================================
+-- %    .- CUALQUIER CADENA DE CERO A MÁS CARACTERES.
+-- -    .- CUALQUIER CARACTER INDIVIDUAL.
+-- ==================================================== COMODIN FIN =================================================
 
 ---------------------------------------------- ****EJEMPLOS PRACTICOS****---------------------------------------
 -- 1) MOSTRAR LOS CAMPOS ID_LIBRO, ISBN, TITULO, SUBTITULO DE LA TABLA ADM_LIBRO CUYO ISBN SEA IGUAL A '0-7645-2641-3';
@@ -60,3 +75,7 @@ select * from dbo.adm_libro where id_editorial in(4,5);
 
 -- 9) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO CUYOS REGISTROS NO PERTENESCAN A LA EDITORIAL 3
 select * from dbo.adm_libro where not id_editorial in(3)
+
+-- 10) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO CUYOS TITULOS EMPIEZEN CON LA LETRA 'C' SEGUIDO CUALQUIER CARACTER.
+
+-- 11) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO EN CUYO TITULO SE ENCUENTRE LA PALABRA 'DATOS'.
