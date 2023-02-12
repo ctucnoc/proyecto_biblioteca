@@ -33,13 +33,15 @@
 --- G) BETWEEN      .- UTILIZAR PARA ESPECIFICAR UN INTERVALO DE VALORES
 --- H) LIKE(~~)     - UTILIZADO EN LA COMPRACIÓN DE UN MODELO
 --- I) IN           .- ESPECIFICADO PARA ESPECIFICAR UN REGISTRO DE UNA BASE DE DATOS
---- J) similar to   .- 
+--- J) ILIKE(!~~)   .- UTILIZADO EN LA COMPRACION DE UN MODELO CON LA DIFERENCIA QUE NO TOMA EN CUENTA LA MAYUSCULA O MINISCULA
+--- k) similar to   .-
 -- ======================================= OPERADORES DE COMPARACIÓN FIN: =========================================
 
 -- ================================================ SINTAXIS SQL: =================================================
 -- CAMPO [NOT] BETWEEN VALOR1 AND VALOR2  --> LA CONDICIÓN NOT NO ES OBLIGATORIA
 -- CAMPO [NOT] IN (VALOR1, VALOR2,...)    --> LA CONDICIÓN NOT NO ES OBLIGATORIA
 -- (EXPRESIÓN Ó CAMPO) [NOT] LIKE MODELO                --> LA CONDICIÓN NOT NO ES OBLIGATORIA
+-- (EXPRESIÓN Ó CAMPO) [NOT] ILIKE MODELO               --> LA CONDICIÓN NOT NO ES OBLIGATORIA
 
 -- ============================================== SINTAXIS SQL FIN: ================================================
 
@@ -77,5 +79,7 @@ select * from dbo.adm_libro where id_editorial in(4,5);
 select * from dbo.adm_libro where not id_editorial in(3)
 
 -- 10) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO CUYOS TITULOS EMPIEZEN CON LA LETRA 'C' SEGUIDO CUALQUIER CARACTER.
+select * from dbo.adm_libro where titulo like 'c%';
 
 -- 11) RETORNAR LAS FILAS DE LA TABLA ADM_LIBRO EN CUYO TITULO SE ENCUENTRE LA PALABRA 'DATOS'.
+select * from dbo.adm_libro where titulo ilike '%datos%';
