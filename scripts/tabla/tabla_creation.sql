@@ -138,6 +138,11 @@ add constraint fk_id_ejemplar_estado
 foreign key (id_ejemplar_estado)
 references dbo.adm_ejemplar_estado (id_ejemplar_estado);
 
+alter table dbo.adm_ejemplar
+add constraint fk_id_libro_ej
+foreign key (id_libro)
+references dbo.adm_libro (id_libro);
+
 alter table dbo.adm_libro
 add constraint fk_id_editorial
 foreign key (id_editorial)
