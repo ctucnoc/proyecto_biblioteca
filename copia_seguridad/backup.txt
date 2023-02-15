@@ -1,0 +1,11 @@
+@echo off
+set PG_HOST=localhost
+set PG_PORT=5432
+set PG_DATABASE=db_biblioteca
+set PG_USER=biblioteca
+set PG_BIN="D:\copias_seguridad_db\bin\pg_dump.exe"
+set PG_FECHA=%date:~11,4%-%date:~8,2%-%date:~5,2%-%time:~0,2%%time:~3,2%%time:~6,2%
+set PG_PATH=D:\copias_seguridad_db\
+set PG_FILENAME="%PG_PATH%\%PG_DATABASE%_%PG_FECHA%.backup"
+set PGPASSWORD=biblioteca
+%PG_BIN%  --file=%PG_FILENAME% --format=custom --no-owner --compress=9 --host=%PG_HOST% --port=%PG_PORT% -U %PG_USER% %PG_DATABASE%
