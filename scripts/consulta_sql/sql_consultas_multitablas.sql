@@ -46,3 +46,30 @@ on li.id_libro = la.id_libro
 inner join dbo.adm_autor au
 on au.id_autor = la.id_autor
 order by 2 asc;
+
+
+---------------------------------------------------------------------------------------------------------------
+--- SQL PELICULA - COMENTARIO : EJEMPLO RIGTH JOIN
+---------------------------------------------------------------------------------------------------------------
+
+create table dbo.pelicula(
+   id_pelicula serial primary key,
+   titulo varchar(255) not null
+);
+
+create table dbo.pelicula_comentario(
+   id_pelicula_comentario serial primary key,
+   id_pelicula integer,
+   comentario varchar(255) not null	
+);
+
+INSERT INTO dbo.pelicula(titulo) VALUES('Joker');
+INSERT INTO dbo.pelicula(titulo) VALUES('Avengers: Endgame');
+INSERT INTO dbo.pelicula(titulo) VALUES('Parasite');
+
+INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(1, 'Excelente');
+INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(2, 'Impresionante');
+INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(null, 'Fasinante');
+INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(null, 'Hermosa');
+
+----------------------------------------- ****EJEMPLOS COMBINACION EXTERNA****----------------------------------
