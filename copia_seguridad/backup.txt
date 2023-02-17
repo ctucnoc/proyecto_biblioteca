@@ -1,4 +1,7 @@
 @echo off
+
+set PG_AUTOR=CRISTIAN TUCNO
+eco AUTOR: %PG_AUTOR%
 set PG_HOST=localhost
 set PG_PORT=5432
 set PG_DATABASE=db_biblioteca
