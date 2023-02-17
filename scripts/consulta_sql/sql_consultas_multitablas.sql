@@ -73,3 +73,8 @@ INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(null, 'Fasin
 INSERT INTO dbo.pelicula_comentario(id_pelicula, comentario) VALUES(null, 'Hermosa');
 
 ----------------------------------------- ****EJEMPLOS COMBINACION EXTERNA****----------------------------------
+select 
+* 
+from dbo.pelicula pe
+right join dbo.pelicula_comentario pc
+on pe.id_pelicula = pc.id_pelicula;
