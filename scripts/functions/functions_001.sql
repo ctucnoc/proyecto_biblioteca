@@ -81,3 +81,21 @@ begin
 end;
 $$
 language 'plpgsql';
+
+create or replace function dbo.fn_factorial(
+in nro int
+)
+returns bigint
+as
+$$
+declare
+ v_factorial bigint := 1;
+begin
+ while nro <> 0 loop
+  v_factorial:= v_factorial*nro;
+  nro:= nro - 1;
+ end loop;
+ return v_factorial;
+end;
+$$
+language 'plpgsql';
